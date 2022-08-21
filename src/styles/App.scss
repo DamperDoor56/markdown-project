@@ -3,20 +3,27 @@ body{
   padding: 0;
   background-color: white;
 }
-.App{
+.main{
   display: flex;
+  background-color: rgb(226, 226, 226);
 }
 .textarea{
+  background-color: transparent;
   width: 50%;
-  height: 90vh;
+  height: 93vh;
   padding: 20px;
-  font-size: 2rem;
+  font-size: 1rem;
   outline: none;
+  resize: horizontal;
 }
-.markdown{
+#preview{
+  resize: horizontal;
+  margin-left: 5px;
   border: 2px solid black;
   width: 50%;
-  height: 90vh;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  height: 93vh;
   padding: 20px;
   outline: none;
 }
