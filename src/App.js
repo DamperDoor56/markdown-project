@@ -7,8 +7,8 @@ function App() {
  
   return(
    <div className='main'>
-   <textarea  value={markdown} onChange={e => setMarkdown(e.target.value)}></textarea>
-   <div dangerouslySetInnerHTML={{ __html: marked(markdown) }} className="output"></div>
+   <textarea id='editor' placeholder='Put a value here' value={markdown} onChange={e => setMarkdown(e.target.value)}></textarea>
+   <div id="preview" dangerouslySetInnerHTML={{ __html: marked(markdown) }} className="output"></div>
    </div>
   )
 }
